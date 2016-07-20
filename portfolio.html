@@ -4,23 +4,6 @@
 <head>
 <meta charset="utf-8">
 		<script>
-			function imageSwitch() {
-				var img1 = document.getElementById("basketball2");
-				var img2 = document.getElementById("mountain");
-				var img3 = document.getElementById("janeNealey");
-				var img4 = document.getElementById("shotput");
-				if (img1.src.match("basketball2.jpg")){
-					img1.src = "fallTrees.jpg";
-					img2.src = "flowers.jpg"
-					img3.src = "City3.jpg";
-					img4.src = "Artsy2.jpg";
-				} else {
-					img1.src = "basketball2.jpg";
-					img2.src = "mountain.jpg";
-					img3.src = "Jane_Nealey.jpg";
-					img4.src = "shotput.JPG";
-				}
-			}
 		</script>
 <style>
 body{
@@ -81,6 +64,7 @@ a{
   opacity: .99;
   overflow: hidden;
   position: relative;
+  margin-top: -30px;
   border-radius: 3px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
 }
@@ -108,7 +92,7 @@ a{
 }
 .tiles .tile .details {
   font-size: 16px;
-  padding: 20px;
+  padding: 10px;
   color: #fff;
   position: absolute;
   bottom: 0;
@@ -176,38 +160,29 @@ a{
 
 
 <div class="tiles">
-<a href="#" class="tile"><img src="obamicon.jpg"/>
-    
-    <div class="details"><span class="title">Obamicon Photo Filter</span><span class="info">Laguage: Python</span></div></a>
-    <a href="#" class="tile"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/2.jpg"/>
-    <div class="details"><span class="title">Adventure Game</span><span class="info">Language: Python</span></div></a>
-    <a href="#" class="tile"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/3.jpg"/>
-    <div class="details"><span class="title">City Runner Game</span><span class="info">Language: Python</span></div></a>
-    <a href="#" class="tile"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/4.jpg"/>
-    <div class="details"><span class="title">Arduino Racing Game</span><span class="info">Language: C++</span></div></a>
-    <a href="#" class="tile"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/1.jpg"/>
-    <div class="details"><span class="title">Mad Libs</span><span class="info">Language: Python</span></div></a>
-    <a href="#" class="tile"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/2.jpg"/>
-    <div class="details"><span class="title">Password Encryption</span><span class="info">Language: Python</span></div></a>
-    <a href="#" class="tile"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/3.jpg"/>
-    <div class="details"><span class="title">Pygame Design</span><span class="info">Language: Python</span></div></a>
-    <a href="#" class="tile"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/4.jpg"/>
-    <div class="details"><span class="title">Drawing Houses</span><span class="info">Language: Python</span></div></a>
-    <a href="#" class="tile"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/4.jpg"/>
-    <div class="details"><span class="title">Falling Snow</span><span class="info">Language: Python</span></div></a>
-    <a href="#" class="tile"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/4.jpg"/>
+
+    <a href="#" class="tile"><img src="hourglass.png"/>
     <div class="details"><span class="title">Arduino LED Hourglass</span><span class="info">Language: C++</span></div></a>
+    <a href="#" class="tile"><img src="adventure.png"/>
+    <div class="details"><span class="title">Adventure Game</span><span class="info">Language: Python</span></div></a>
+    <a href="#" class="tile"><img src="citygame.png"/>
+    <div class="details"><span class="title">City Runner Game</span><span class="info">Language: Python</span></div></a>
+    <a href="#" class="tile"><img src="game.png"/>
+    <div class="details"><span class="title">Arduino Racing Game</span><span class="info">Language: C++</span></div></a>
+    <a href="#" class="tile"><img src="madlibs.png"/>
+    <div class="details"><span class="title">Mad Libs</span><span class="info">Language: Python</span></div></a>
+    <a href="#" class="tile"><img src="passcode.png"/>
+    <div class="details"><span class="title">Password Encryption</span><span class="info">Language: Python</span></div></a>
+    <a href="#" class="tile"><img src="spiral.png"/>
+    <div class="details"><span class="title">Pygame Design</span><span class="info">Language: Python</span></div></a>
+    <a href="#" class="tile"><img src="obamicon.jpg"/><div class="details">
+    <span class="title">Obamicon Photo Filter</span><span class="info">Laguage: Python</span></div></a>
+    <a href="#" class="tile"><img src="snoww.png"/>
+    <div class="details"><span class="title">Falling Snow</span><span class="info">Language: Python</span></div></a>
+    <a href="#" class="tile"><img src="houses.png"/>
+    <div class="details"><span class="title">Drawing Houses</span><span class="info">Language: Python</span></div></a>
+    
     </div>     
-      
-<table>
-  <tr>
- 
-  <td> <img class="me" id="basketball2" src="basketball2.jpg" onClick="imageSwitch()" /></td>
-  <td> <img class="me" id="mountain" src="mountain.jpg" onClick="imageSwitch()"/></td>
-  <td> <img class="me" id="janeNealey" onClick="imageSwitch()" src="Jane_Nealey.jpg"/></td>
-  <td> <img class="me" id="shotput" onClick="imageSwitch()" src="shotput.JPG"/></td>
-  </tr>
-</table>
 
 </body>
 
