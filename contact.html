@@ -68,28 +68,15 @@ a{
   </tr>
 </table>
 
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>whatcaniwatch</title>
-</head>
-<body>
-<div class="row">
- <div class="row">
-  <div class="small-10 medium-11 columns">
-    <div class="range-slider" data-slider data-options="display_selector: #sliderOutput3;">
-      <span class="range-slider-handle" role="slider" tabindex="0"></span>
-      <span class="range-slider-active-segment"></span>
-    </div>
-  </div>
-  <div class="small-2 medium-1 columns">
-    <span id="sliderOutput3"></span>
-  </div>
-</div>
-</body>
-</html>
 
+<input type="range" min="0" max="50" value="0" step="5" onchange="showValue(this.value)" />
+<span id="range">0</span>
+<script type="text/javascript">
+function showValue(newValue)
+{
+	document.getElementById("range").innerHTML=newValue;
+}
+</script>
 
 <table>
   <tr>
