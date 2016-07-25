@@ -3,6 +3,17 @@
 <head>
 <meta charset="utf-8">
 <title>whatcaniwatch</title>
+
+<style>
+.input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius: 8px;
+  height: 7px;
+  border: 1px solid #bdc3c7;
+  background-color: #fff; 
+}
+</style>
 </head>
 <body>
 <input type="range" min="0" max="72" value="0" step="1" onchange="showValue(this.value)" />
